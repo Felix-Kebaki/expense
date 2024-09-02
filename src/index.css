@@ -1,0 +1,264 @@
+@font-face {
+  font-family: Helvetica;
+  src: url(../src/assets/Helvetica.ttf);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+.MainAtApp{
+  align-content: center;
+  min-height: 100dvh;
+  background-color: rgb(218, 215, 215);
+  width: 100%;
+}
+
+.MainDivAtApp{
+  width: 35%;
+  background-color: black;
+  margin: 0rem auto 0rem;
+  border-radius: 0.4rem;
+  padding: 1.5rem 0.7rem 1.5rem 0.7rem;
+}
+
+#MainHeader{
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+}
+
+
+/*START OF BALANCE*/
+
+#YourBalanceTittle{
+  font-size: 1.5rem;
+  color: white;
+  margin-top: 2rem;
+  
+}
+
+#Balance{
+  font-size: 2rem;
+  margin-top: 0.3rem;
+  color: white;
+}
+
+.ExpIncomeDiv{
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+  width: 70%;
+  margin: 2rem auto 0rem;
+  height: 5rem;
+  background-color: rgb(29, 29, 29);
+  border-radius: 0.4rem;
+}
+
+.EachDiv{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 0.4rem;
+  align-items: center;
+  width: 50%;
+}
+
+.EachDiv p{
+  color: white;
+}
+
+#Income{
+  color: green;
+}
+
+#Expense{
+  color: red;
+}
+
+.VerticalLine{
+  width: 0.2rem;
+  background-color: white;
+}
+
+.EnterTransDiv{
+  margin: 2rem auto 0rem;
+  width: 90%;
+}
+
+#NameInput{
+  width: 100%;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 0.1rem;
+}
+
+#LabelsTrans{
+  color: white;
+  font-size: 0.9rem;
+  margin: 0rem 0rem 0rem 0.3rem;
+}
+
+#Income ,#Expense{
+  margin: 0.6rem 0rem 0rem 1rem;
+}
+
+/*END OF BALANCE*/
+
+
+
+/*START OF HISTORY*/
+
+.HistoryMainDiv{
+  margin: 2rem auto 0rem;
+  width: 90%;
+}
+
+#HistortTittle{
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.EachHistoryWrapper{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(36, 36, 36);
+  padding: 0.4rem 0.6rem;
+  margin: 0.5rem 0rem 0.2rem 0rem;
+  border-right: 0.2rem  solid;
+  position: relative;
+}
+
+.green{
+  border-color: green;
+}
+
+.red{
+  border-color: red;
+}
+
+.EachHistoryWrapper p{
+  color: white;
+}
+
+.BinDiv{
+  position: absolute;
+  left: -1.7rem;
+  top: 0;
+  display: none;
+}
+
+#TrashHistory{
+  color: black;
+  font-size: 1.11rem;
+  background-color: red;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+#NoTransMessage{
+  color: white;
+  font-size: 0.8rem;
+}
+
+.EachHistoryWrapper:hover .BinDiv{
+  display: block;
+}
+
+
+/*END OF HISTORY*/
+
+
+
+
+/*START OF TRANSACTIONS*/
+
+.EnterTransDiv{
+  margin: 2rem auto 0rem;
+  width: 90%;
+}
+
+#NameInput{
+  width: 100%;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 0.1rem;
+}
+
+#LabelsTrans{
+  color: white;
+  font-size: 0.9rem;
+  margin: 0rem 0rem 0rem 0.3rem;
+}
+
+#Income ,#Expense{
+  margin: 0.6rem 0rem 0rem 1rem;
+  cursor: pointer;
+}
+
+#AmountInput{
+  width: 100%;
+  margin-top: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 0.1rem;
+}
+
+#TransSubmitBtn{
+  border: none;
+  background-color: #1c54bb;
+  color: white;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.1rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+
+/*END OF TRANSACTIONS*/
+
+
+@media screen and (max-width:1352px){
+  .MainDivAtApp{
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width:480px){
+  .MainDivAtApp{
+    width: 28rem;
+  }
+}
+
+@media screen and (max-width:452px){
+  .MainDivAtApp{
+    width: 24rem;
+  }
+  .ExpIncomeDiv{
+    width: 90%;
+  }
+  
+}
+
+@media screen and (max-width:388px){
+  .MainDivAtApp{
+    width: 100%;
+  }
+  .ExpIncomeDiv{
+    width: 97%;
+  }
+}
